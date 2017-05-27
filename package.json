@@ -1,0 +1,27 @@
+{
+  "name": "mat-kaikille",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "yargs": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ../mdmath/index.js ./01-teht.md -o ./01-teht.html --styles assets/css/hy.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hruoho/mat-kaikille.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hruoho/mat-kaikille/issues"
+  },
+  "homepage": "https://github.com/hruoho/mat-kaikille#readme"
+}

@@ -1,0 +1,167 @@
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+html {
+  // background-image: url('assets/img/fabr.jpg');
+  // background-size: 40px;
+  background-image: url('/assets/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  /*background-attachment: fixed;*/
+  /*background-repeat: no-repeat;*/
+}
+
+body {
+  min-height: 100%;
+  background: hsla(30, 15%, 100%, 0.5);
+  font-family: Lora, serif;
+  padding: 1px;
+}
+
+.sheet {
+  width: 66%;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 5px 2px gray;
+  background: hsla(60, 90%, 97%, 0.9);
+  counter-reset: headings;
+  overflow-x: scroll;
+}
+
+
+.sheet h1 {
+  visibility: hidden;
+  font-size: 100%;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  line-height: 0;
+}
+
+.sheet-content {
+  margin: 10%;
+}
+
+
+@media all and (max-width: 800px) {
+  html {
+    background-image: url('/assets/img/bg-md.jpg');
+  }
+  .sheet {
+    width: 85%;
+    margin-top: 2.5%;
+    // padding: 0;
+  }
+  .sheet-content {
+    margin: 5%;
+  }
+  // .sheet-content ul > li {
+  //   margin-left: 5%;
+  // }
+}
+
+
+
+
+@media all and (max-width: 600px) {
+  html {
+    background-image: url('/assets/img/bg-sm.jpg');
+  }
+  .sheet {
+    width: 95%;
+    margin-top: 2.5%;
+    padding: 0;
+  }
+  .sheet-content {
+    margin: 5%;
+  }
+  .sheet-content ul > li {
+    margin-left: 5%;
+  }
+}
+
+.sheet-content img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td,
+table th {
+  padding: 5px;
+  text-align: center;
+}
+
+table td:last-of-type,
+table th:last-of-type {
+  border-right: none;
+}
+
+table th {
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.note {
+  background: hsla(0, 40%, 50%, 0.1);
+  border-top: 2px solid hsl(0, 40%, 50%);
+  border-bottom: 2px solid hsl(0, 40%, 50%);
+  padding: 15px;
+}
+
+
+
+.teht h1+p:before,
+.teht h1+ul:before {
+  content: "Tehtävä " counter(headings) ". ";
+  counter-increment: headings;
+  font-weight: bold;
+  color: initial;
+  text-align: right;
+  /*margin-right: .6rem;*/
+}
+
+.teht ul {
+  counter-reset: list;
+}
+
+.teht ul > li {
+  list-style: none;
+  margin-left: 1rem;
+  margin-top: 4px;
+  // padding-left: 0.7rem;
+}
+
+
+.teht ul > li:before {
+  display: inline-block;
+  width: 0;
+  margin-right: 2rem;
+  text-align: right;
+  font-weight: bold;
+  content: counter(list, lower-alpha) ") ";
+  counter-increment: list;
+}
+
+.teht ul ul > li:before {
+  content: counter(list, lower-roman) ") ";
+}
