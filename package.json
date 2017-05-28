@@ -9,9 +9,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ../mdmath/index.js ./01-teht.md -o ./01-teht.html --styles assets/css/hy.css"
+    "start": "node ../mdmath/index.js ./01-teht.md -o ./01-teht.html --styles assets/css/teht.css",
+    "slides": "node ../matematiikkaa_kaikille/index.js ./01-johdanto.md -o ./01-johdanto.html --styles assets/css/slides.css --scripts assets/js/slides.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    "scss": "node-sass --watch --output assets/css/ scss/"
   },
   "repository": {
     "type": "git",

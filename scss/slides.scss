@@ -1,0 +1,80 @@
+html {
+  /*font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  sans-serif;*/
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana", sans-serif;
+  color: hsl(0, 40%, 40%);
+}
+
+li,
+ul {
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+blockquote {
+  background: hsla(0, 50%, 50%, 0.3);
+  text-align: justify;
+  padding: 20px;
+  border: 5px solid hsl(0, 50%, 50%);
+  line-height: 1.5;
+  padding: 2rem;
+  border-left: 0;
+  border-right: 0;
+  font-weight: 500;
+}
+
+textarea#source {
+  display: none;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.remark-container {
+  background: url('assets/img/bg.jpg');
+  background-position: bottom;
+}
+
+.remark-slide-content {
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.remark-fading {
+  display: none;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.src::before {
+  content: "Lähde: ";
+}
+
+.src {
+  display: block;
+  text-align: right;
+  font-size: 75%;
+  font-style: normal;
+}
+
+ol,
+ul {
+  margin: 10px 0;
+}
+
+ol li,
+ul li {
+  margin: 10px;
+}
