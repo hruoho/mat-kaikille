@@ -1,9 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Lora';
 
 html {
-  // background-image: url('assets/img/fabr.jpg');
+  // background-image: url('../img/fabr.jpg');
   // background-size: 40px;
-  background-image: url('/assets/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -45,7 +45,7 @@ body {
 
 @media all and (max-width: 800px) {
   html {
-    background-image: url('/assets/img/bg-md.jpg');
+    background-image: url('../img/bg-md.jpg');
   }
   .sheet {
     width: 85%;
@@ -65,7 +65,7 @@ body {
 
 @media all and (max-width: 600px) {
   html {
-    background-image: url('/assets/img/bg-sm.jpg');
+    background-image: url('../img/bg-sm.jpg');
   }
   .sheet {
     width: 95%;
