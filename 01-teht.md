@@ -19,15 +19,48 @@ title: "Matematiikkaa kaikille: harjoitus 1"
 * Osaatko perustella havaintosi pätevän yleisesti?
 :::
 
+::: teht
+# Tehtävä
+Luonnollinen luku $n$ on *kolmioluku*, jos $n$ pistettä voidaan asetella säännöllisen kolmion muotoon. Esimerkiksi $1$, $3$ ja $7$ ovat kolmiolukuja:
+
+![Kolmiolukuja](assets/img/triangles.png)
+
+* Selvitä 5 ensimmäistä kolmiolukua.
+* Miten kolmioluku saadaan edellisestä kolmioluvusta?
+* Millainen summalauseke kertoo $n$:nnen kolmioluvun?
+* Perustele kolmiolukujen avulla, että $1 + 2 + 3 + \ldots + n = n(n+1)/2$.
+:::
 
 ::: teht
 # Tehtävä
-Fibonaccin lukujono määritellään asettamalla $a_0=1$, $a_1=1$ ja $a_{n+2} = a_{n} + a_{n+1}$. Jono alkaa $1, 1, 2, 3, 5, 8, 13, \ldots$.
+Luonnollinen luku on *neliöluku*, jos se on jonkin luvun toinen potenssi. Esimerkiksi $1$, $4$ ja $9$ ovat neliölukuja:
 
-Lukujonon sanotaan joskus olevan *fibonaccimainen*, jos sen jäsenet muodostetaan kahden edeltävän jäsenen summana, kuten alkuperäisessä Fibonaccin lukujonossa, mutta mielivaltaisilla aloitusluvuilla.
+![Neliölukuja](assets/img/squares.png)
+
+* Selvitä 5 ensimmäistä neliölukua.
+* Miten neliöluku saadaan edellisestä neliöluvusta?
+* Perustele neliölukujen avulla, että $1 + 3 + 5 +\ldots + (2n - 1) = n^2$.
+* Miten neliöluku voidaan muodostaa kolmiolukujen avulla?
+:::
+
+::: teht
+# Tehtävä
+Luonnollinen luku on *kuutioluku*, jos se on jonkin luvun kolmas potenssi. Esimerkiksi $1$, $8$ ja $27$ ovat kuutiolukuja.
+
+* Laske edellisessä tehtävässä selvittämiesi kolmiolukujen neliöt (toiset potenssit).
+* Laske peräkkäisten neliöiden erotukset. Mitä huomaat?
+* Miten voisit ilmentää havaintoasi esimerkiksi kolmiolukujen $6$ ja $10$ tapauksessa?
+* Mitä voit havaintosi perusteella sanoa luvusta $1^3 + 2^3 + 3^3 + 4^3 + 5^3$?
+* Bonus: Selvitä, päteekö havaintosi yleisesti!
+:::
+
+::: teht
+# Tehtävä
+Kuuluisa *Fibonaccin lukujono* määritellään asettamalla $a_1=1$, $a_2=1$ ja $a_{n+2} = a_{n} + a_{n+1}$. Jono alkaa $1, 1, 2, 3, 5, 8, 13, \ldots$.
+Lukujonoa sanotaan joskus *fibonaccimaiseksi*, jos se muodostetaan kuten Fibonaccin jono, mutta mielivaltaisilla aloitusluvuilla.
 
 * Valitse kaksi (pientä) luonnollista lukua $a_1$ ja $a_2$ fibonaccimaisen jonon ensimmäisiksi jäseniksi.
-* Selvitä jonosi 10 ensimmäistä jäsentä yksi kerrallaan. Esimerkiksi kolmas jäsen on $a_3 = a_2 + a_1$.
+* Selvitä jonosi 10 ensimmäistä jäsentä yksi kerrallaan. Esimerkiksi kolmas jäsen saadaan kaavalla $a_3 = a_1 + a_2$.
 * Laske 10 ensimmäisen jäsenen summa ja jaa se jonosi 7. jäsenellä.
 * Vertaa tulosta toisten ryhmäläisten tuloksiin. Mitä huomaat?
 * Osaatko perustella havaintosi pätevän yleisesti? Voisiko tulosta yleistää?
@@ -35,7 +68,7 @@ Lukujonon sanotaan joskus olevan *fibonaccimainen*, jos sen jäsenet muodostetaa
 
 ::: teht
 # Tehtävä
-Collatzin jono muodostetaan aloittamalla mielivaltaisesta luonnollisesta luvusta ja käyttämällä toistuvasti kaavaa
+*Collatzin jono* muodostetaan aloittamalla mielivaltaisesta luonnollisesta luvusta ja käyttämällä toistuvasti kaavaa
 $$
   a_{n+1} =
   \begin{cases}
@@ -43,14 +76,12 @@ $$
     3a_n + 1, \text{ kun } a_n \text{ on pariton}
   \end{cases}
 $$
+*Collatzin konjektuuri* sanoo, että prosessi johtaa lukuun 1 äärellisellä määrällä askelia riippumatta aloitusluvusta. Väitettä ei ole onnistuttu todistamaan, mutta se on tarkistettu valtavan suurelle joukolle lukuja. Joidenkin mielestä näyttää siltä, että vaikka väite olisi totta, niin sen todistaminen on nykymatematiikan ulottumattomissa.
 
-Collatzin konjektuuri sanoo, että prosessi johtaa lukuun 1 äärellisellä määrällä askelia riippumatta aloitusluvusta. Väitettä ei ole onnistuttu todistamaan, mutta se on tarkistettu valtavan suurelle joukolle lukuja. Joidenkin mielestä näyttää siltä, että todistus on nykymatematiikan ulottumattomissa.
-[https://en.wikipedia.org/wiki/3x_%2B_1_problem](https://en.wikipedia.org/wiki/3x_%2B_1_problem)
+Tee toinen tai molemmat seuraavista tehtävistä:
 
-Tee toinen tai molemmat seuraavista tehtävistä (järjestyksellä ei väliä):
-
-* Valitse kolme lukua väliltä 10 - 100 ja muodosta Collatzin jono. Kuinka monta askelta tarvitset päästäksesi lukuun 1?
-* Kirjoita ohjelma, joka tulostaa Collatzin jonon annetulle luvulle väliltä 1 - 100 ja kertoo tarvittavien askelten lukumäärän. Voit käyttää valitsemaasi ohjelmointikieltä, myös pseudokoodia.
+* Valitse kolme lukua väliltä 1 - 20 ja muodosta Collatzin jono. Kuinka monta askelta tarvitset päästäksesi lukuun 1?
+* Kirjoita ohjelma, joka tulostaa Collatzin jonon annetulle luvulle väliltä 1 - 100. Voit käyttää valitsemaasi ohjelmointikieltä, myös pseudokoodia. Tutki ohjelmasi toimintaa muutamilla luvuilla.
 :::
 
 ::: note
@@ -58,15 +89,12 @@ Jokainen luonnollinen luku voidaan jakaa yksikäsitteisellä tavalla alkulukujen
 
 Esimerkiksi luvun $60$ esitys alkutekijöidensä tulona on $60 = 2^2\cdot3\cdot5$ ja luvun $28$ vastaavasti $28=2^2\cdot7$.
 
-Ottamalla luvun alkutekijöiden kaikki mahdolliset yhdistelmät, löydetään kaikki luvun *tekijät* eli *jakajat*. Esimerkiksi luvun $60$ jakajat ovat
+Ottamalla luvun alkutekijöiden kaikki mahdolliset yhdistelmät, löydetään kaikki luvun *tekijät* eli *jakajat*.
+Muut jakajat kuin luku itse ovat sen *aitoja jakajia*. Tilanteesta riippuen luku $1$ saatetaan jättää jakajista pois.
+Esimerkiksi luvun $60$ jakajat ovat luvut
 $$
-1, 2, 3, 5, 4, 6, 10, 15, 12, 20, 30, 60
+1, 2, 3, 5, 4, 6, 10, 15, 12, 20, 30, 60.
 $$
-jotka saadaan alkutekijöiden $2,2,3,5$ avulla esimerkiksi seuraavasti:
-$$
-1, 2, 3, 5, 2\cdot2, 2\cdot3, 2\cdot5, 3\cdot 5, 2\cdot2\cdot3, 2\cdot2\cdot5, 2\cdot3\cdot5, 2\cdot2\cdot3\cdot5.
-$$
-Tilanteesta riippuen luku $1$ saatetaan jättää jakajista pois. Muut jakajat kuin luku itse ovat sen *aitoja jakajia*.
 :::
 
 ::: teht
@@ -101,7 +129,7 @@ $$
 # Tehtävä
 Luvut $m$ ja $n$ ovat suhteellisia alkulukuja, jos niiden suurin yhteinen tekijä on 1. Esimerkiksi luvut $6$ ja $25$ ovat suhteellisia alkulukuja, mutta $6$ ja $24$ eivät ole.
 
-*Eulerin funktio* $\varphi\colon\mathbb{N}\to\mathbb{N}$ määritellään siten, että $\varphi(n)$ on sellaisten luvun $n$ suhteellisten alkulukujen määrä, jotka ovat pienempiä kuin $n$. Esimerkiksi $\varphi(6)$ = 2 ja $\varphi(8) = 4$.
+*Eulerin funktio* $\varphi\colon\mathbb{N}\to\mathbb{N}$ määritellään siten, että $\varphi(n)$ on sellaisten luvun $n$ suhteellisten alkulukujen määrä, jotka ovat pienempiä kuin $n$. Esimerkiksi $\varphi(6) = 2$ ja $\varphi(8) = 4$.
 
 * Määritä $\varphi(12)$, $\varphi(30)$ ja $\varphi(70)$ esimerkiksi etsimällä lukujen alkutekijät ja käyttämällä Erastotheneen seulaa.
 * Mitä voit sanoa luvusta $\varphi(n)$, kun $n$ on alkuluku?

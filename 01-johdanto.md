@@ -26,20 +26,16 @@ class: center, middle
   > Matematiikka ei tutki ympäröivää, fysikaalista todellisuutta, vaan käsitteellisiä riippuvuussuhteita.
   >.src[Wikipedia]
 
----
-class: center, middle
-### Matematiikan ominaispiirteitä
+???
+
+Ominaispiirteitä
 
 - Eksaktisuus
 - Abstraktisuus
+- Käsitteellisyys ja symblismi
 - Riippumattomuus
-- Deduktiivisuus
-- Hyödynnettävyys
-
-???
-- deduktiivisuus => pysyvyys ja luotettavuus: monet tulokset voimassa jo tuhansia vuosia
-- hyödynnettävyys: yhtäältä tiede ja toisaalta kieli, jota muut tieteet käyttävät
-- symbolit?
+- Deduktiivisuus => pysyvyys ja luotettavuus: monet tulokset voimassa jo tuhansia vuosia
+- Hyödynnettävyys => yhtäältä tiede ja toisaalta kieli, jota muut tieteet käyttävät
 
 ---
 class: center, middle
@@ -50,24 +46,8 @@ class: center, middle
 * Keskitytään hyvin spesifeihin osa-alueisiin
 * Periaatteessa riippumaton muista tieteistä
 * Käytännössä vuorovaikutusta molempiin suuntiin
+* Ominaispiirteitä: eksakstisuu, abstraktisuus, riippumattomuus, ...
 ---
-class: center, middle
-### Historian merkkihenkilöitä
-
-![Fermat 1607, Leibniz 1646, Euler 1707, Gauss 1777](assets/img/str1.jpg)
-![Cauchy 1789, Riemann 1826, Poincare 1854, Hilbert 1862](assets/img/str2.jpg)
-???
-
-* Fermat 1607
-* Leibniz 1646
-* Euler 1707
-* Gauss 1777
-* Cauchy 1789
-* Riemann 1826
-* Poincare 1854
-* Hilbert 1862
----
-
 class: center, middle
 ### Matematiikan jaottelua
 
@@ -88,7 +68,23 @@ class: center, middle
 
 ---
 class: center, middle
-## Osa 2: Matematiikan metodit
+### Historian merkkihenkilöitä
+
+![Fermat 1607, Leibniz 1646, Euler 1707, Gauss 1777](assets/img/str1.jpg)
+![Cauchy 1789, Riemann 1826, Poincare 1854, Hilbert 1862](assets/img/str2.jpg)
+???
+
+* Fermat 1607, lakimies ja matemaatikko, differentiaalilaskentaa, lukuteoriaa, analyyttistä geometriaa
+* Leibniz 1646, filosofi ja matemaatikko, newtonin aikalainen, differentiaalilaskenta (mm. analyysin peruslause)
+* Euler 1707, matemaatikko yms, differentiaalilaskenta, verkot, lukuteoria,... merkinnät e ja f(x)
+* Gauss 1777, vaikutusvaltaisimpia matemaatikoita: lukuteoria, algebra, tilastotiede, analyysi, ...
+* Cauchy 1789, matemaatikko, käytännössä loi kompleksianalyysin, nimeään kantavia tuloksia valtavasti
+* Riemann 1826, matemaatikko, analyysi, lukuteoria, diff. geometria. Riemannin intergraali, Riemannin pinnat, Riemannin hypoteesi
+* Poincare 1854, viimeinen universalisti, POincaren konjektuuri, kolmen kappaleen ongelma
+* Hilbert 1862, yksi vaikutusvaltaisimpia, kontribuutioita nkykymatematiikan formalismiin, 23 kohdan ohjelma
+---
+class: center, middle
+## Osa 2: Matemaattinen työskentely
 
 > It has become customary to view mathematical research as establishing truth by rigorous deduction from appropriately chosen axioms and definitions.
 > .src[Wikipedia]
@@ -98,6 +94,16 @@ class: center, middle
 * deduktiivisuus takaa, että teoreemat pitävät paikkansa oletusten vallitessa
 * teoreemojen pohjalta johdetaan taas uusia tuloksia
 
+---
+class: center, middle
+### Esimerkki: luonnolliset luvut
+???
+- Mitä luonnolliset luvut ovat?
+- Miten ne voitaisiin määritellä?
+- Miksi ne täytyy määritellä?
+  - joidenkin mielestä ei tarvitse sillä ovat ymmärrykseemme sisäänrakennettuja
+  - Kronecker: jumala loi luvut
+  - toisten mielestä luvut eivät ole luonnollisia vaan seuraavat määritelmistä
 ---
 ### Esimerkki: luonnolliset luvut
 #### Aksiomaattinen lähestymistapa (Peanon aksioomat)
@@ -110,7 +116,7 @@ Luonnollisten lukujen kaikki ominaisuudet saadaan johdettua seuraavista perusole
 4. Jos kahden luvun seuraajat ovat samat, niin luvut ovat samat.
 5. Jos väite on tosi luvulla 0, ja siitä, että väite on tosi jollain luvulla seuraa, että se on tosi myös luvun seuraajalla, niin väite on tosi kaikilla luonnollisilla luvuilla.
 
-Viimeinen näistä on nk. induktio-oletus.
+Viimeistä aksioomaa kutsutaan *induktioperiaatteeksi*.
 ---
 
 ### Esimerkki: luonnolliset luvut
@@ -121,10 +127,10 @@ Sovitaan, että
 
 Luonnolliset luvut rakentuvat tällöin seuraavasti:
 - $0 = \\{\\}$
-- \\(1 = \\{0\\} = 0 \cup \\{0\\} = \\{ \\{ \\} \\} \\)
-- \\(2 = \\{0, 1\\} = 1 \\cup \\{1\\} = \\{\\{\\}, \\{\\{\\}\\}\\} \\)
-- \\(3 = \\{0, 1, 2\\} = 2 \\cup \\{2\\} = \\{\\{\\}, \\{\\{\\}\\}, \\{\\{\\}, \\{\\{\\}\\}\\}\\} \\)
-- \\(k = \\{0, 1, 2, \\ldots, k-1\\} = k-1 \\cup \\{k-1\\} \\)
+- \\(1 = \\{0\\} = \\{ \\{ \\} \\} \\)
+- \\(2 = \\{0, 1\\} = \\{\\{\\}, \\{\\{\\}\\}\\} \\)
+- \\(3 = \\{0, 1, 2\\} = \\{\\{\\}, \\{\\{\\}\\}, \\{\\{\\}, \\{\\{\\}\\}\\}\\} \\)
+- \\(k = \\{0, 1, 2, \\ldots, k-1\\}\\)
 
 Luku on siis sitä edeltävien - pienempien - lukujen kokoelma.
 
@@ -157,7 +163,7 @@ Luonnollisten lukujen kertolasku saadaan puolestaan määriteltyä seuraavasti:
 1. $n \cdot 0 = 0$
 2. $n \cdot S(m) = n \cdot m + n$.
 
-Jälkimmäinen ehto voidaan kirjoittaa tutussa muodossa:
+Merkinnän $S(m) = m + 1$ avulla jälkimmäinen ehto voidaan kirjoittaa tutussa muodossa:
 $$
   n \cdot (m + 1) = n\cdot m + n
 $$
@@ -166,7 +172,9 @@ $$
   a \cdot (b + c) = a\cdot b + a\cdot c
 $$
 kaikilla luonnollisilla luvuilla $a$, $b$ ja $c$.
-
+---
+class: center, middle
+### Esimerkki: alkuluvut
 ---
 ### Esimerkki: alkuluvut
 #### Määritelmä
@@ -175,9 +183,9 @@ kaikilla luonnollisilla luvuilla $a$, $b$ ja $c$.
 
 - Alkulukujen jono alkaa seuraavasti: $$2, 3, 5, 7, 11, 13, 17, \ldots, 179, 181, 191, \ldots, 2011, 2017, \ldots $$
 
-- Aritmetiikan peruslauseen mukaan jokainen luonnollinen luku voidaan jakaa yksikäsitteisellä tavalla alkutekijöihin eli esittää alkulukujen tulona.
+- Alkuluvut ovat tietyssä mielessä luonnollisten lukujen "rakennuspalikoita".
 
-- Luvun alkutekijöiden löytäminen mielivaltaisessa tapauksessa on vaativaa.
+- Luvun alkutekijöiden löytäminen mielivaltaisessa tapauksessa on vaativaa ja käytännössä mahdotonta.
 
 ???
 Aritmetiikan peruslauseessa kaksi osaa. Todistus induktiolla käyttäen Eukleideen lemmaa: p | ab => p | a V p | b
@@ -189,14 +197,21 @@ Aritmetiikan peruslauseessa kaksi osaa. Todistus induktiolla käyttäen Eukleide
 ### Esimerkki: alkuluvut
 #### Avoimia kysymyksiä
 - Onko jokainen parillinen luku kahden alkuluvun summa? (Goldbach 1742)
-- Onko jokainen pariton luku summa kolmesta alkuluvusta?
-- Onko jokaiselle parilliselle luvulle $n$ olemassa äärettömän monta peräkkäisten alkulukujen paria, joiden etäisyys on $n$? (Polignac 1849)
+- ~~Onko jokainen pariton luku summa kolmesta alkuluvusta?~~ (Golbachin heikko konjektuuri, todistettu 2013)
+- Onko jokaiselle parilliselle luvulle $n$ olemassa äärettömän monta
+  peräkkäisten alkulukujen paria, joiden etäisyys on $n$? (Polignac 1849)
+- Onko kaksoisalkulukuja (*twin primes*) äärettömästi?
 - Onko lukujen $n^2$ ja $(n+1)^2$ välillä aina alkuluku? (Opperman 1882)
 - Onko Mersennen alkulukuja äärettömästi?
 
 ???
+- Goldbach: esim 10 = 7 + 3 ja 24 = 11 + 13
+- Goldbach odd: esim. 17 = 3 + 7 + 7 ja 25 = 3 + 11 + 11
 * Mersennen luvut ovat muotoa $2^n-1$ olevia alkulukuja. Niitä tunnetaan 49. Suurimmassa on yli 22 miljonaa numeroa.
 * Mersennen lukujen yhteys salauksiin?
+---
+class: center, middle
+### Esimerkki: lukujoukot
 ---
 
 ### Esimerkki: lukujoukot
@@ -221,12 +236,11 @@ olevien yhtälöiden ratkaisuilla.
 #### Luonnollisista luvuista kompleksilukuihin
 * Kompleksilukujen joukko $\\mathbb{C}$ saadaan laajentamalla reaalilukujen joukkoa imaginaariyksiköllä $i$.
 * Kompleksilukujen joukko on viimein *algebrallisesti suljettu*: $n$-asteisella polynomilla on aina $n$ juurta.
-![](assets/img/complex.jpg)
+.wrapper[![](assets/img/complex.png)]
 .caption[Kompleksiluvut muodostavat lukutason]
 
 ---
 ### Esimerkki: lukujoukot
-#### Luonnollisista luvuista kompleksilukuihin
 ![](assets/img/numbers.png)
 
 ---

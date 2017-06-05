@@ -49,8 +49,14 @@ body {
   font-size: 1rem;
   margin-top: 10px; }
 
+.wrapper {
+  display: block;
+  max-width: 70%;
+  margin: auto;
+}
+/*
 .src::before {
-  content: "Lähde: "; }
+  content: "Lähde: "; }*/
 
 .src {
   display: block;
