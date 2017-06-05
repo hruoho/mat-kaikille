@@ -9,16 +9,10 @@ class: center, middle
 ## Osa 1: Mitä matematiikka on?
 
 ???
+  * fysiikka: ainetta, energiaa ja peruslakeja tutkiva tiede
+  * biologia: elollisen luonnon ilmiöitä ja lainalaisuuksia tutkiva luonnontiede
   * mitä tulee mieleen sanasta matematiikka?
-    - laskento
-    - yhtälönratkaisu
-    - kuvaajat ja kuviot
-    - geometria, tasokuviot, avaruuskappaleet
-    - symmetriat
-    - optimointi
-    - päättely
-    - symbolit
-  * miten matematiikan voisi määritellä ja miten määritelmä eroaa vaikkapa fysiikan määritelmästä
+  * laskento - yhtälönratkaisu - kuvaajat ja kuviot - geometria, tasokuviot, avaruuskappaleet - symmetriat - optimointi - päättely - symbolit
 ---
 class: center, middle
 ### Luonnehdinta
