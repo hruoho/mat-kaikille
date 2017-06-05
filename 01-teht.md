@@ -80,7 +80,7 @@ $$
 
 Tee toinen tai molemmat seuraavista tehtävistä:
 
-* Valitse kolme lukua väliltä 1 - 20 ja muodosta Collatzin jono. Kuinka monta askelta tarvitset päästäksesi lukuun 1?
+* Valitse kolme lukua väliltä 1 - 20 ja muodosta Collatzin jonot. Kuinka monta askelta tarvitset päästäksesi lukuun 1?
 * Kirjoita ohjelma, joka tulostaa Collatzin jonon annetulle luvulle väliltä 1 - 100. Voit käyttää valitsemaasi ohjelmointikieltä, myös pseudokoodia. Tutki ohjelmasi toimintaa muutamilla luvuilla.
 :::
 
