@@ -21,7 +21,7 @@ title: "Matematiikkaa kaikille: harjoitus 1"
 
 ::: teht
 # Tehtävä
-Luonnollinen luku $n$ on *kolmioluku*, jos $n$ pistettä voidaan asetella säännöllisen kolmion muotoon. Esimerkiksi $1$, $3$ ja $7$ ovat kolmiolukuja:
+Luonnollinen luku $n$ on *kolmioluku*, jos $n$ pistettä voidaan asetella kolmion muotoon. Esimerkiksi $1$, $3$ ja $6$ ovat kolmiolukuja:
 
 ![Kolmiolukuja](assets/img/triangles.png)
 
