@@ -33,7 +33,7 @@ Luonnollinen luku $n$ on *kolmioluku*, jos $n$ pistettä voidaan asetella sään
 
 ::: teht
 # Tehtävä
-Luonnollinen luku on *neliöluku*, jos se on jonkin luvun toinen potenssi. Esimerkiksi $1$, $4$ ja $9$ ovat neliölukuja:
+Luonnollinen luku on *neliöluku*, jos $n$ pistettä voidaan asetella neliön muotoon. Esimerkiksi $1$, $4$ ja $9$ ovat neliölukuja:
 
 ![Neliölukuja](assets/img/squares.png)
 
@@ -45,7 +45,7 @@ Luonnollinen luku on *neliöluku*, jos se on jonkin luvun toinen potenssi. Esime
 
 ::: teht
 # Tehtävä
-Luonnollinen luku on *kuutioluku*, jos se on jonkin luvun kolmas potenssi. Esimerkiksi $1$, $8$ ja $27$ ovat kuutiolukuja.
+Luonnollinen luku on *kuutioluku*, jos $n$ pistettä voidaan asetella kuution muotoon. Esimerkiksi $1$, $8$ ja $27$ ovat kuutiolukuja.
 
 * Laske edellisessä tehtävässä selvittämiesi kolmiolukujen neliöt (toiset potenssit).
 * Laske peräkkäisten neliöiden erotukset. Mitä huomaat?

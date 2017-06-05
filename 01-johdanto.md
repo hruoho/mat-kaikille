@@ -1,6 +1,8 @@
 class: center, middle
 
+### HY / Avoin yliopisto
 # Matematiikkaa kaikille
+### Kesä 2017
 
 ---
 class: center, middle
@@ -41,20 +43,19 @@ Ominaispiirteitä
 class: center, middle
 ### Matematiikka tieteenalana
 
-* Historian kulta-aika 1600-luvulta 1900-luvulle
-* Tutkimus aktiivista ja kenttä nykyisin valtavan laaja
-* Keskitytään hyvin spesifeihin osa-alueisiin
+* Pitkä historia, kulta-aika 1600-luvulta 1900-luvulle
+* Tutkimus aktiivista, kokonaisuus valtavan laaja
+* Tutkimuksessa keskitytään hyvin spesifeihin osa-alueisiin
 * Periaatteessa riippumaton muista tieteistä
 * Käytännössä vuorovaikutusta molempiin suuntiin
-* Ominaispiirteitä: eksakstisuu, abstraktisuus, riippumattomuus, ...
 ---
 class: center, middle
 ### Matematiikan jaottelua
 
-![](assets/img/fields.jpg)
+![](assets/img/fields.png)
 
 ???
-
+* muitakin jaotteluja: koulu-, yliopisto- ja kilpailumatematiikka
 * algebra
 * analyysi
 * geometria
@@ -64,11 +65,11 @@ class: center, middle
 * topologia
 * todennäköisyys
 
-- MSC-luokitus: http://ams.org/msc
+- MSC-luokituksessa tuhansia tutkimusaloja: http://ams.org/msc
 
 ---
 class: center, middle
-### Historian merkkihenkilöitä
+### Muutamia merkkihenkilöitä
 
 ![Fermat 1607, Leibniz 1646, Euler 1707, Gauss 1777](assets/img/str1.jpg)
 ![Cauchy 1789, Riemann 1826, Poincare 1854, Hilbert 1862](assets/img/str2.jpg)
@@ -193,6 +194,15 @@ Aritmetiikan peruslauseessa kaksi osaa. Todistus induktiolla käyttäen Eukleide
   * riemannin hypoteesi
   * n/ln(n)
 * yhteys salauksiin
+---
+### Esimerkki: alkuluvut
+#### Tärkeitä perusominaisuuksia
+Eukleideen lause:
+  > Alkulukuja on äärettömästi.
+
+Aritmetiikan peruslause:
+  > Jokainen luonnollinen luku voidaan esittää yksikäsitteisellä tavalla alkulukujen tulona.  
+
 ---
 ### Esimerkki: alkuluvut
 #### Avoimia kysymyksiä

@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node ../mdmath/index.js ./01-teht.md -o ./01-teht.html --styles assets/css/teht.css",
-    "slides": "node ../matematiikkaa_kaikille/index.js --styles assets/css/slides.css --scripts assets/js/slides.js -i",
+    "slides": "node ../matematiikkaa_kaikille/index.js --fonts https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/fonts/ --styles assets/css/slides.css --scripts assets/js/slides.js -i",
     "postslides": "perl -pi -e 's|https://gnab.github.io/remark/downloads/remark-latest.min.js|https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js|g' *.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch --output assets/css/ scss/"
