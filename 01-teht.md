@@ -47,7 +47,7 @@ Luonnollinen luku on *neliöluku*, jos $n$ pistettä voidaan asetella neliön mu
 # Tehtävä
 Luonnollinen luku on *kuutioluku*, jos $n$ pistettä voidaan asetella kuution muotoon. Esimerkiksi $1$, $8$ ja $27$ ovat kuutiolukuja.
 
-* Laske edellisessä tehtävässä selvittämiesi kolmiolukujen neliöt (toiset potenssit).
+* Laske aiemmassa tehtävässä selvittämiesi kolmiolukujen neliöt (toiset potenssit).
 * Laske peräkkäisten neliöiden erotukset. Mitä huomaat?
 * Miten voisit ilmentää havaintoasi esimerkiksi kolmiolukujen $6$ ja $10$ tapauksessa?
 * Mitä voit havaintosi perusteella sanoa luvusta $1^3 + 2^3 + 3^3 + 4^3 + 5^3$?
