@@ -84,7 +84,7 @@
 <p>Vigenèren salaus (käytä <a href="assets/pdf/vigenere.pdf">Vigenèren neliötä</a>)</p>
 <ul>
 <li>Salaa viesti <code>TAVATAAN AAMUNKOITTEESSA</code> avainsanalla <code>VIGENERE</code>.</li>
-<li>Millä avainsanalla salatekstiksi tulisi <code>ASSEE TTIOK NUMAA NAATA VAT</code>? Entä alkuperäinen selkoteksti?</li>
+<li>Millä avainsanalla salatekstiksi tulisi <code>ASSEE TTIOK NUMAA NAATA VAT</code>? Entä alkuperäinen selkoteksti? Avainsana ei tässä tapauksessa</li>
 <li>Millaisella avainsanalla Vigenèren menetelmä vastaisi jotain Caesarin salausta?</li>
 <li>Miten Vigenèren salaus puretaan, kun avainsana tunnetaan?</li>
 </ul>
@@ -104,12 +104,14 @@
 <ul>
 <li>Salaa viesti <code>NOIN KUULIN SANELTAVAKSI</code> avaimella <code>JMDOY QVLNS UQIUA ODLWS ON</code>.</li>
 <li>Pura viesti <code>VYBBZ TLKEP DQOYW MMCOG</code>, kun tiedät avaimen olevan <code>DYOBG BRQMX DDGGC BMHON</code>.</li>
-<li>Keksi kaksi samanpituista viestiä (vaikkapa <code>KALEVALAN</code> ja <code>LUONNOTAR</code>).
-Muunna jälkimmäinen selkoteksteistäsi Atbash-salauksella.
-Käytä tulosta Vigenèren avaimena ja salaa ensimmäinen selkotekstisi.</li>
-<li>Salaa edellisessä kohdassa keksimäsi selkotekstit (vastoin periaatetta)
-samalla, itse valitsemallasi kerta-avaimella. &quot;Vähennä&quot; salatekstit toisistaan.
-Vertaa tulosta edellisen kohdan lopputulokseen.</li>
+<li>Keksi kaksi samanpituista viestiä (vaikkapa <code>KALEVALAN</code> ja <code>LUONNOTAR</code>).</li>
+<li>Salaa keksimäsi selkotekstit (vastoin periaatetta)
+samalla, itse valitsemallasi kerta-avaimella.</li>
+<li>Vähennä salatekstit toistaan merkki kerrallaan käyttäen yltä löytyvää taulukkoa.
+Esimerkiksi kirjainten D ja J erotus olisi <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn><mo>−</mo><mn>9</mn><mo>=</mo><mo>−</mo><mn>5</mn><mo>≡</mo><mn>2</mn><mn>1</mn><mtext><mtext> </mtext><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi><mtext> </mtext></mtext><mn>2</mn><mn>6</mn></mrow><annotation encoding="application/x-tex">4 - 9 = -5 \equiv 21\text{ mod }26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">4</span><span class="mbin">−</span><span class="mord mathrm">9</span><span class="mrel">=</span><span class="mord">−</span><span class="mord mathrm">5</span><span class="mrel">≡</span><span class="mord mathrm">2</span><span class="mord mathrm">1</span><span class="text mord textstyle uncramped"><span class="mord mspace"> </span><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span><span class="mord mspace"> </span></span><span class="mord mathrm">2</span><span class="mord mathrm">6</span></span></span></span>, eli
+vastaisi kirjainta V.</li>
+<li>Vähennä vielä selkotekstisi toisistaan. Mitä huomaat?
+Miksi kerta-avainta ei tule käyttää kahdesti?</li>
 </ul>
 </div>
 <div class="teht">
@@ -127,7 +129,6 @@ ja reittiä &quot;oikeasta yläkulmasta vastapäivään&quot;.</li>
 <ul>
 <li>Salaa viesti <code>BEGIN AT THE BEGINNING</code> käyttäen vuorotellen avainsanoja <code>BCRYPT</code> ja <code>TWOFISH</code>.</li>
 <li>Pura viesti <code>ETSHN TTPNO EHADT E</code> kun tiedät avainsanan olleen <code>ELGAMAL</code>.</li>
-<li>Mieti, miten kaksinkertainen salaus vaikuttaa salauksen vahvuuteen.</li>
 </ul>
 </div>
 <div class="teht">
@@ -135,8 +136,8 @@ ja reittiä &quot;oikeasta yläkulmasta vastapäivään&quot;.</li>
 <p>Tutki (pikku-)Enigman mallia ja toimintaa alta löytyvien materiaalien avulla.
 Kummankin version käyttöohjeet löytyvät jälkimmäisestä tiedostosta.</p>
 <ul>
-<li><a href="http://blogs.helsinki.fi/mathversum/files/2016/09/Enigma_osat.pdf">Linkki: pikku-Enigma (pdf)</a></li>
 <li><a href="http://blogs.helsinki.fi/summamutikka/files/2014/06/Enigma.pdf">Linkki: Enigma (pdf)</a></li>
+<li><a href="http://blogs.helsinki.fi/mathversum/files/2016/09/Enigma_osat.pdf">Linkki: pikku-Enigma (pdf)</a></li>
 </ul>
 </div>
 <div class="teht">
@@ -163,7 +164,7 @@ riittävän tunnusluvun selvittämiseksi:</p>
 <div class="teht">
 <h1>Tehtävä</h1>
 <p>Jatkoa edelliseen tehtävään: samainen henkilö on saanut erääseen palveluun tunnusluvun
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn><mn>5</mn><mn>5</mn><mn>1</mn><mn>7</mn></mrow><annotation encoding="application/x-tex">65517</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">6</span><span class="mord mathrm">5</span><span class="mord mathrm">5</span><span class="mord mathrm">1</span><span class="mord mathrm">7</span></span></span></span> ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
-Shamirin menetelmän sijaan voit halutessasi mukailla Blakleyn menetelmää.</p>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn><mn>5</mn><mn>5</mn><mn>3</mn><mn>7</mn></mrow><annotation encoding="application/x-tex">65537</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">6</span><span class="mord mathrm">5</span><span class="mord mathrm">5</span><span class="mord mathrm">3</span><span class="mord mathrm">7</span></span></span></span> ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
+Shamirin menetelmän sijaan voit halutessasi mukailla <a href="https://en.wikipedia.org/wiki/Secret_sharing#Blakley.27s_scheme">Blakleyn menetelmää</a>.</p>
 </div>
 </div></div></div></div></main><footer></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script></body></html>

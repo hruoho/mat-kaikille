@@ -30,7 +30,7 @@ Caesar-salaus.
 Vigenèren salaus (käytä [Vigenèren neliötä](assets/pdf/vigenere.pdf))
 
 * Salaa viesti `TAVATAAN AAMUNKOITTEESSA` avainsanalla `VIGENERE`.
-* Millä avainsanalla salatekstiksi tulisi `ASSEE TTIOK NUMAA NAATA VAT`? Entä alkuperäinen selkoteksti?
+* Millä avainsanalla salatekstiksi tulisi `ASSEE TTIOK NUMAA NAATA VAT`? Entä alkuperäinen selkoteksti? Avainsana ei tässä tapauksessa
 * Millaisella avainsanalla Vigenèren menetelmä vastaisi jotain Caesarin salausta?
 * Miten Vigenèren salaus puretaan, kun avainsana tunnetaan?
 :::
@@ -51,11 +51,13 @@ Kerta-avain (one-time pad)
 * Salaa viesti `NOIN KUULIN SANELTAVAKSI` avaimella `JMDOY QVLNS UQIUA ODLWS ON`.
 * Pura viesti `VYBBZ TLKEP DQOYW MMCOG`, kun tiedät avaimen olevan `DYOBG BRQMX DDGGC BMHON`.
 * Keksi kaksi samanpituista viestiä (vaikkapa `KALEVALAN` ja `LUONNOTAR`).
-  Muunna jälkimmäinen selkoteksteistäsi Atbash-salauksella.
-  Käytä tulosta Vigenèren avaimena ja salaa ensimmäinen selkotekstisi.
-* Salaa edellisessä kohdassa keksimäsi selkotekstit (vastoin periaatetta)
-  samalla, itse valitsemallasi kerta-avaimella. "Vähennä" salatekstit toisistaan.
-  Vertaa tulosta edellisen kohdan lopputulokseen.
+* Salaa keksimäsi selkotekstit (vastoin periaatetta)
+  samalla, itse valitsemallasi kerta-avaimella.
+* Vähennä salatekstit toistaan merkki kerrallaan käyttäen yltä löytyvää taulukkoa.
+  Esimerkiksi kirjainten D ja J erotus olisi $4 - 9 = -5 \equiv 21\text{ mod }26$, eli
+  vastaisi kirjainta V.
+* Vähennä vielä selkotekstisi toisistaan. Mitä huomaat?
+  Miksi kerta-avainta ei tule käyttää kahdesti?
 :::
 
 ::: teht
@@ -71,7 +73,6 @@ Transpositiosalaus (reitti)
 Transpositiosalaus (sarakkeittain)
 * Salaa viesti `BEGIN AT THE BEGINNING` käyttäen vuorotellen avainsanoja `BCRYPT` ja `TWOFISH`.
 * Pura viesti `ETSHN TTPNO EHADT E` kun tiedät avainsanan olleen `ELGAMAL`.
-* Mieti, miten kaksinkertainen salaus vaikuttaa salauksen vahvuuteen.
 :::
 
 ::: teht
@@ -79,8 +80,8 @@ Transpositiosalaus (sarakkeittain)
 Tutki (pikku-)Enigman mallia ja toimintaa alta löytyvien materiaalien avulla.
 Kummankin version käyttöohjeet löytyvät jälkimmäisestä tiedostosta.
 
-* [Linkki: pikku-Enigma (pdf)](http://blogs.helsinki.fi/mathversum/files/2016/09/Enigma_osat.pdf)
 * [Linkki: Enigma (pdf)](http://blogs.helsinki.fi/summamutikka/files/2014/06/Enigma.pdf)
+* [Linkki: pikku-Enigma (pdf)](http://blogs.helsinki.fi/mathversum/files/2016/09/Enigma_osat.pdf)
 :::
 
 ::: teht
@@ -114,6 +115,6 @@ Selvitä kadonnut tunnusluku.
 # Tehtävä
 
 Jatkoa edelliseen tehtävään: samainen henkilö on saanut erääseen palveluun tunnusluvun
-$65517$ ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
-Shamirin menetelmän sijaan voit halutessasi mukailla Blakleyn menetelmää.
+$65537$ ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
+Shamirin menetelmän sijaan voit halutessasi mukailla [Blakleyn menetelmää](https://en.wikipedia.org/wiki/Secret_sharing#Blakley.27s_scheme).
 :::
