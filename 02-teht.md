@@ -98,7 +98,6 @@ Laskuja ei tarvitse suorittaa loppuun.
 
 ::: teht
 # Tehtävä
-Secret sharing
 
 Hajamielinen henkilö on unohtanut pankkikorttinsa tunnusluvun. Tilannetta ennakoiden hän on
 jo aiemmin hajauttanut tunnuslukunsa käyttäen (yksinkertaistettua) Shamirin menetelmää.
@@ -113,7 +112,6 @@ Selvitä kadonnut tunnusluku.
 
 ::: teht
 # Tehtävä
-Secret sharing
 
 Jatkoa edelliseen tehtävään: samainen henkilö on saanut erääseen palveluun tunnusluvun
 $65517$ ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
