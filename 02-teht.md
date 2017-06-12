@@ -32,7 +32,7 @@ Vigenèren salaus (käytä [Vigenèren neliötä](assets/pdf/vigenere.pdf))
 * Salaa viesti `TAVATAAN AAMUNKOITTEESSA` avainsanalla `VIGENERE`.
 * Millä avainsanalla salatekstiksi tulisi `ASSEE TTIOK NUMAA NAATA VAT`? Entä alkuperäinen selkoteksti?
 * Millaisella avainsanalla Vigenèren menetelmä vastaisi jotain Caesarin salausta?
-* Miten Vigenèren salaus puretaan?
+* Miten Vigenèren salaus puretaan, kun avainsana tunnetaan?
 :::
 
 ::: teht
