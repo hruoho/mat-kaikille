@@ -38,7 +38,7 @@ class: center, middle
 $$
 E(x_i) = n - x_i \text{ mod } 26 \quad\text{ja}\quad D_n(x_i) = n + x_i \text{ mod } 26,
 $$
-missä $x_i$ on salattavan viestin $i$:nnen kirjaimen järjestyluku aakkostossa ja $n$ aakkoston koko.
+missä $x_i$ on salattavan viestin $i$:nnen kirjaimen järjestysluku aakkostossa.
 ???
 * Esim. `ATTACKATDAWN` => `ÖIIÖZRÖIYÖFO`
 ---
@@ -64,7 +64,7 @@ Caesar-$n$:
 $$
 E_n(x_i) = x_i + n \text{ mod } 26 \quad\text{ja}\quad D_n(x_i) = x_i - n \text{ mod } 26,
 $$
-missä $x_i$ on salattavan viestin $i$:nnen kirjaimen järjestyluku aakkostossa ja $n$ aakkoston koko.
+missä $x_i$ on salattavan viestin $i$:nnen kirjaimen järjestysluku aakkostossa.
 
 ???
 * Esim. `ATTACKATDAWN` => `NEENPXNEQNHÄ`
