@@ -17,6 +17,13 @@ body {
   background: hsla(30, 15%, 100%, 0.5);
   font-family: Lora, serif;
   padding: 1px;
+  line-height: 1.2;
+}
+
+
+code {
+  font-size: 85%;
+  letter-spacing: 0.05rem;
 }
 
 .sheet {

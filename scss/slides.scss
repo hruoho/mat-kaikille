@@ -15,6 +15,7 @@ ul {
 img {
   display: block;
   max-width: 90%;
+  max-height: 72vh;
   margin: auto;
 }
 
@@ -37,7 +38,6 @@ textarea#source {
 body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-
 .remark-container {
   background: url('assets/img/bg.jpg');
   background-position: bottom;

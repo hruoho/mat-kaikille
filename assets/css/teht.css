@@ -13,7 +13,12 @@ body {
   min-height: 100%;
   background: rgba(255, 255, 255, 0.5);
   font-family: Lora, serif;
-  padding: 1px; }
+  padding: 1px;
+  line-height: 1.2; }
+
+code {
+  font-size: 85%;
+  letter-spacing: 0.05rem; }
 
 .sheet {
   width: 66%;

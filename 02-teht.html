@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Matematiikkaa kaikille: harjoitus 1</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" attr><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous"><link rel="stylesheet" href="assets/css/teht.css"></head><body><header></header><main><div class="row"><div class="col s12 m10 l8 offset-m1 offset-l2"><div class="sheet"><div class="sheet-content"><div class="title">
+<ul>
+<li>HY / Avoin yliopisto</li>
+<li>Matematiikan ja tilastotieteen laitos</li>
+<li>Matematiikkaa kaikille (kesä 2017)</li>
+<li>Harjoitus 2</li>
+</ul>
+</div>
+<p>Ohessa taulukko kirjainten “numerovastaavuuksista”. Huomaa, ettei merkistössä ole ääkkösiä.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+<th>I</th>
+<th>J</th>
+<th>K</th>
+<th>L</th>
+<th>M</th>
+<th>N</th>
+<th>O</th>
+<th>P</th>
+<th>Q</th>
+<th>R</th>
+<th>S</th>
+<th>T</th>
+<th>U</th>
+<th>V</th>
+<th>W</th>
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Caesar-salaus.</p>
+<ul>
+<li>Salaa viesti <code>PERJANTAI AARRESAARELLA</code> menetelmällä Caesar-13.</li>
+<li>Mitä tapahtuu, jos toistat prosessin salatekstillesi?</li>
+<li>Millä salauksilla edellisen kohdan tilanne toistuu, jos käytössä onkin 27 tai kaikki 29 aakkosta?</li>
+<li>Pura viesti <code>ZHABT HPULU ZHSHP ZBBZ</code> kun menetelmä on ollut Caesar-7.</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Vigenèren salaus (käytä <a href="assets/pdf/vigenere.pdf">Vigenèren neliötä</a>)</p>
+<ul>
+<li>Salaa viesti <code>TAVATAAN AAMUNKOITTEESSA</code> avainsanalla <code>VIGENERE</code>.</li>
+<li>Millä avainsanalla salatekstiksi tulisi <code>ASSEE TTIOK NUMAA NAATA VAT</code>? Entä alkuperäinen selkoteksti?</li>
+<li>Millaisella avainsanalla Vigenèren menetelmä vastaisi jotain Caesarin salausta?</li>
+<li>Miten Vigenèren salaus puretaan?</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Beaufortin salaus (käytä <a href="assets/pdf/vigenere.pdf">Vigenèren neliötä</a>)</p>
+<ul>
+<li>Salaa viesti <code>TAVATAAN AAMUNKOITTEESSA</code> avainsanalla <code>BEAUFORT</code>.</li>
+<li>Toista prosessi salatekstillesi. Miksi näin käy?</li>
+<li>Pura viesti <code>OXAVZ FMRPO XABOS RXJOY O</code>, kun tiedät avainsanan olevan <code>GRONSFELD</code>.</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Kerta-avain (one-time pad)</p>
+<ul>
+<li>Salaa viesti <code>NOIN KUULIN SANELTAVAKSI</code> avaimella <code>JMDOY QVLNS UQIUA ODLWS ON</code>.</li>
+<li>Pura viesti <code>VYBBZ TLKEP DQOYW MMCOG</code>, kun tiedät avaimen olevan <code>DYOBG BRQMX DDGGC BMHON</code>.</li>
+<li>Keksi kaksi samanpituista viestiä (vaikkapa <code>KALEVALAN</code> ja <code>LUONNOTAR</code>).
+Muunna jälkimmäinen selkoteksteistäsi Atbash-salauksella.
+Käytä tulosta Vigenèren avaimena ja salaa ensimmäinen selkotekstisi.</li>
+<li>Salaa edellisessä kohdassa keksimäsi selkotekstit (vastoin periaatetta)
+samalla, itse valitsemallasi kerta-avaimella. &quot;Vähennä&quot; salatekstit toisistaan.
+Vertaa tulosta edellisen kohdan lopputulokseen.</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Transpositiosalaus (reitti)</p>
+<ul>
+<li>Salaa viesti <code>THE QUEEN OF HEARTS</code> käyttäen 5-sarakkeista taulukkoa
+ja reittiä &quot;oikeasta yläkulmasta vastapäivään&quot;.</li>
+<li>Pura viesti <code>IWFFO TIDSX XXAEH THRHE</code> käyttäen edellisen kohdan salaustapaa.</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Transpositiosalaus (sarakkeittain)</p>
+<ul>
+<li>Salaa viesti <code>BEGIN AT THE BEGINNING</code> käyttäen vuorotellen avainsanoja <code>BCRYPT</code> ja <code>TWOFISH</code>.</li>
+<li>Pura viesti <code>ETSHN TTPNO EHADT E</code> kun tiedät avainsanan olleen <code>ELGAMAL</code>.</li>
+<li>Mieti, miten kaksinkertainen salaus vaikuttaa salauksen vahvuuteen.</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Tutki (pikku-)Enigman mallia ja toimintaa alta löytyvien materiaalien avulla.
+Kummankin version käyttöohjeet löytyvät jälkimmäisestä tiedostosta.</p>
+<ul>
+<li><a href="http://blogs.helsinki.fi/mathversum/files/2016/09/Enigma_osat.pdf">Linkki: pikku-Enigma (pdf)</a></li>
+<li><a href="http://blogs.helsinki.fi/summamutikka/files/2014/06/Enigma.pdf">Linkki: Enigma (pdf)</a></li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Enigman etupaneelissa on pistoke kullekin 26 kirjaimelle. Kirjaimista valitaan</p>
+<ul>
+<li>1 pari,</li>
+<li>2 paria,</li>
+<li>10 paria,</li>
+</ul>
+<p>jotka kytketään toisiinsa kaapeleilla. Kuinka monella tavalla kytkentä voidaan tehdä?
+Laskuja ei tarvitse suorittaa loppuun.</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Secret sharing</p>
+<p>Hajamielinen henkilö on unohtanut pankkikorttinsa tunnusluvun. Tilannetta ennakoiden hän on
+jo aiemmin hajauttanut tunnuslukunsa käyttäen (yksinkertaistettua) Shamirin menetelmää.
+Pienen etsinnän jälkeen hän on löytänyt piilottamistaan avaimista kaksi, ja uskoo niiden
+riittävän tunnusluvun selvittämiseksi:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mn>1</mn><mn>1</mn><mn>2</mn><mo>)</mo><mo>=</mo><mn>3</mn><mn>9</mn><mn>2</mn><mn>9</mn><mo separator="true">,</mo><mi>f</mi><mo>(</mo><mn>2</mn><mn>1</mn><mn>1</mn><mo>)</mo><mo>=</mo><mn>4</mn><mn>6</mn><mn>2</mn><mn>2</mn><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">f(112) = 3929, f(211) = 4622.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mord mathrm">1</span><span class="mord mathrm">2</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mord mathrm">9</span><span class="mord mathrm">2</span><span class="mord mathrm">9</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathrm">2</span><span class="mord mathrm">1</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">4</span><span class="mord mathrm">6</span><span class="mord mathrm">2</span><span class="mord mathrm">2</span><span class="mord mathrm">.</span></span></span></span></span></p>
+<p>Selvitä kadonnut tunnusluku.</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Secret sharing</p>
+<p>Jatkoa edelliseen tehtävään: samainen henkilö on saanut erääseen palveluun tunnusluvun
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6</mn><mn>5</mn><mn>5</mn><mn>1</mn><mn>7</mn></mrow><annotation encoding="application/x-tex">65517</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">6</span><span class="mord mathrm">5</span><span class="mord mathrm">5</span><span class="mord mathrm">1</span><span class="mord mathrm">7</span></span></span></span> ja haluaa hajauttaa sen kolmelle avaimelle. Miten hajauttamisen voisi tehdä?
+Shamirin menetelmän sijaan voit halutessasi mukailla Blakleyn menetelmää.</p>
+</div>
+</div></div></div></div></main><footer></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script></body></html>
