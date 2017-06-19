@@ -1,3 +1,5 @@
+# Esimerkki: Monty Hall
+
 # Esimerkki: Simpsonin paradoksi
 ## Sairaalat
 |              | A        | B        |
@@ -19,6 +21,10 @@ Tyypillisesti vastasyntyneen lapsen alipainoisuus lisää menehtymisen riskiä t
  - https://en.wikipedia.org/wiki/Simpson%27s_paradox
  - https://www.youtube.com/watch?v=sxYrzzy3cq8
  - 2009 osoitettiin, että Simpsonin paradoksin mukainen tilanne ilmaantuu satunnaisessa $2\times 2\times 2$-ruudukossa todennäköisyydellä $1 / 60$.
+ . salasanoista ja niiden vahvuuksista jotain
+ - wife puzzle http://datagenetics.com/blog/december32012/index.html
+ - moscow puzzle http://datagenetics.com/blog/august22016/index.html
+
 
 * Monty Hall
   - https://en.wikipedia.org/wiki/Monty_Hall_problem

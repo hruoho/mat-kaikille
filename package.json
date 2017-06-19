@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ../mdmath/index.js  --styles assets/css/teht.css --input",
+    "start": "node ../mdmath/index.js  --scripts assets/js/jquery-3.2.1.slim.min.js assets/js/teht.js assets/js/ratk.js --styles assets/css/teht.css assets/css/ratk.css --input",
     "slides": "node ../matematiikkaa_kaikille/index.js --fonts https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/fonts/ --styles assets/css/slides.css --scripts assets/js/slides.js -i",
     "postslides": "perl -pi -e 's|https://gnab.github.io/remark/downloads/remark-latest.min.js|https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js|g' *.html",
     "test": "echo \"Error: no test specified\" && exit 1",

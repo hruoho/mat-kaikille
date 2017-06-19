@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Matematiikkaa kaikille: harjoitus 3</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" attr><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous"><link rel="stylesheet" href="assets/css/teht.css?"><link rel="stylesheet" href="assets/css/ratk.css?"></head><body><header></header><main><div class="row"><div class="col s12 m10 l8 offset-m1 offset-l2"><div class="sheet"><div class="sheet-content"><div class="title">
+<ul>
+<li>HY / Avoin yliopisto</li>
+<li>Matematiikan ja tilastotieteen laitos</li>
+<li>Matematiikkaa kaikille (kesä 2017)</li>
+<li>Harjoitus 3</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Ota pari ja valitse kaksi mustaa ja yksi punainen pelikortti.
+Käännä kortit selkäpuoli ylöspäin, sekoita ne ja aseta riviin.
+Parisi tavoitteena on saada punainen kortti. Hän valitsee pöydällä olevista
+korteista yhden, mutta ei vielä käännä sitä ympäri.
+Tarkista kaksi muuta korttia ja käännä ympäri yksi musta kortti.
+Parisi saa päättää, vaihtaako valitsemansa kortin toiseen vai ei.</p>
+<ul>
+<li>Pelatkaa muutamia kierroksia ja kerätkää pieni aineisto siitä,
+päätettiinkö korttia vaihtaa ja tuliko voitto vai häviö.
+Pelatkaa niin monta kierrosta, että aineisto on mahdollisimman kattava.</li>
+<li>Kannattaako valittua korttia vaihtaa? Miten tämän voisi perustella?</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Alla olevassa taulukossa on erään yliopiston sisäänpääsyprosentteja jaoteltuna
+mies- ja naishakijoiden mukaan. Taulukon perustella useimpiin tiedekuntiin
+on hyväksytty naishakijoista suurempi osuus kuin mieshakijoista.</p>
+<table class="wikitable" style="margin-left:auto; margin-right:auto; border:none;">
+<tbody>
+<tr>
+<th></th>
+<th colspan="2">Miehet</th>
+<th colspan="2">Naiset</th>
+</tr>
+<tr>
+<th>Tiedekunta</th>
+<th>Hakijoita</th>
+<th>Hyväksyttyjä</th>
+<th>Hakijoita</th>
+<th>Hyväksyttyjä</th>
+</tr>
+<tr>
+<th>A</th>
+<td>825</td>
+<td>62%</td>
+<td>108</td>
+<td><b>82%</b></td>
+</tr>
+<tr>
+<th>B</th>
+<td>560</td>
+<td>63%</td>
+<td> 25</td>
+<td><b>68%</b></td>
+</tr>
+<tr>
+<th>C</th>
+<td>325</td>
+<td><b>37%</b></td>
+<td>593</td>
+<td>34%</td>
+</tr>
+<tr>
+<th>D</th>
+<td>417</td>
+<td>33%</td>
+<td>375</td>
+<td><b>35%</b></td>
+</tr>
+<tr>
+<th>E</th>
+<td>191</td>
+<td><b>28%</b></td>
+<td>393</td>
+<td>24%</td>
+</tr>
+<tr>
+<th>F</th>
+<td>373</td>
+<td> 6%</td>
+<td>341</td>
+<td> <b>7%</b></td>
+</tr>
+</tbody></table>
+<p>Laadi seuraavanlainen yhteenveto koko aineistosta:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hakijoita</th>
+<th>Hyväksyttyjä</th>
+<th>Hyväksymisprosentti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naisia</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Miehiä</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Miltä tilanne näyttää yhteenvedon perusteella? Onko päätelmä todenmukainen?</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Alla olevat kuvat esittävät kahden kuvitteellisen puolueen (siniset ja punaiset)
+kannattajien sijoittumista kartalle kahtena eri vuonna.
+Tehtävänäsi on kummassakin tapauksessa jakaa alue viiteen vaalipiiriin siten, että
+kussakin piirissä on saman verran äänestäjiä ja</p>
+<ul>
+<li>sininen</li>
+<li>punainen</li>
+</ul>
+<p>puolue voittaa, kun käytössä on enemmistövaalit. Miten vaalipiirit voisi muodostaa?
+Vaalipiirin tulee olla yhtenäinen.</p>
+<div class="img-box">
+  <img src="assets/img/gerry1.png">
+  <img src="assets/img/gerry2.png">
+</div>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Tutkija on saanut käsiinsä seuraavat tilastoaineistot:</p>
+<ul>
+<li>maapallon etäisyys lähimpiin galakseihin</li>
+<li>Suomen kuntien väkiluvut</li>
+<li>tulivuorten purkausten voimakkuudet eräänä ajanjaksona</li>
+<li>yleisimmät pankkikorttien tunnusluvut</li>
+<li>suuri joukko Fibonaccin lukuja</li>
+<li>vaaliehdokkaiden äänimäärät äänestyspaikoittain</li>
+<li>suuren yrityksen tulo- ja menoerät eräänä ajanjaksona</li>
+</ul>
+<p>Hän kiinnostuu aineistoissa esiintyvistä luvuista ja haluaa selvittää,
+miten niiden ensimmäiset numerot mahtavat jakautua.</p>
+<p>Miltä itse arvelisit kunkin jakauman likimain näyttävän? Yhdistä aineistot alla oleviin kuviin (klikkaa suuremmaksi).</p>
+<div class="img-box">
+  <img class="img-clickable" src="assets/img/gaussSeq.png">
+  <img class="img-clickable" src="assets/img/uniSeq.png">
+  <img class="img-clickable" src="assets/img/logSeq.png">
+</div>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Piirrä alla olevan kuvan mukainen <em>logaritminen asteikko</em>. Väritä tai erota muuten toisistaan
+ne asteikon alueet, joilla sijaitsevien lukujen ensimmäinen numero on <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">4</span></span></span></span>, tai <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">5</span></span></span></span>.</p>
+<img class="img-clickable" src="assets/img/log.png" style="max-width: 100%">
+<p>Jos valitset satunnaisen luvun logaritmiselta asteikolta, millä todennäköisyydellä arvioisit
+(kuviosi perusteella) sen ensimmäisen numeron olevan</p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3?</li>
+</ul>
+<!-- http://investexcel.net/wp-content/uploads/2012/10/Arizona.png -->
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Henkilöt A ja B ovat hankkineet uudet solmiot, mutta unohtaneet niiden hinnat.
+He aikovat lyödä vetoa siitä, kumpi sai solmionsa halvemmalla ja sopivat voittajan
+saavan häviäjän solmion.</p>
+<p>A järkeilee seuraavasti:
+&quot;On yhtä todennäköistä voittaa tai hävitä. Jos häviän, menetän solmioni, mutta
+jos voitan, saan arvokkaamman solmion. Niinpä minun kannattaa pelata.&quot;</p>
+<p>B järkeilee samalla tavalla ja aikoo myös osallistua peliin. Ei kuitenkaan
+ole mahdollista, että peli olisi molemmille suotuisa. Missä järkeily menee pieleen?</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Edessäsi on kolme laatikkoa, joista yhdessä on kaksi kultakolikkoa,
+toisessa kaksi hopeakolikkoa ja kolmannessa yksi kumpaakin.
+Valitset laatikon ja poimit sokkona kolikon, joka osoittautuu kultakolikoksi.
+Millä todennäköisyydellä toinenkin laatikon kolikoista on kultaa?</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Luokassa on</p>
+<ul>
+<li>10</li>
+<li>20</li>
+<li>30</li>
+</ul>
+<p>samana vuonna syntynyttä henkilöä. Laske todennäköisyys, heistä
+ainakin kahdella on sama syntymäpäivä kun syntymäpäivien oletetaan jakautuneen
+tasaisesti vuoden jokaiselle päivälle. Karkausvuoden mahdollisuutta ei tarvitse huomioida.</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Osoita, että joukossa, jossa on</p>
+<ul>
+<li>3</li>
+<li>5</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></li>
+</ul>
+<p>henkilöä, on vähintään kaksi henkilöä, joilla on täsmälleen yhtä monta tuttavaa
+tässä joukossa. Tuttavuus ymmärretään molemminpuoliseksi.</p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Lumikki ja seitsemän kääpiötä ovat lähdössä huviretkelle. He matkustavat
+vaunuissa, jossa kaikki kahdeksan matkustajaa istuvat parijonossa, eli
+pareittain peräkkäin.</p>
+<ul>
+<li>Kuinka monella tavalla seurue voi matkustaa?</li>
+<li>Kuinka monella tavalla seurue voi matkustaa, kun Lumikki ei halua istua
+Nuhanenän vieressä eivätkä Viisas ja Unelias tule toimeen keskenään?</li>
+<li>Jos järjestys valitaan arvalla, niin millä todennäköisyydellä kaikki ovat tyytyväisiä tulokseen?</li>
+</ul>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Tarkastellaan lukujoukkoa <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mo fence="true">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo fence="true">}</mo></mrow></mrow><annotation encoding="application/x-tex">\left\{1,2,3\right\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="minner textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">{</span><span class="mord mathrm">1</span><span class="mpunct">,</span><span class="mord mathrm">2</span><span class="mpunct">,</span><span class="mord mathrm">3</span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">}</span></span></span></span></span>.</p>
+<ul>
+<li>Laske lukujen keskiarvo ja keskihajonta.</li>
+<li>Joukkoon lisätään reaaliluku <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> siten, että keskihajonta säilyy samana. Selvitä <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>.</li>
+</ul>
+<p>Voit käyttää keskihajonnalle kaavaa</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mi>N</mi></mrow></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>−</mo><msup><mrow><mo fence="true">[</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant="normal">/</mi><mi>N</mi><mo fence="true">]</mo></mrow><mn>2</mn></msup></mrow></msqrt><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">  \sigma = \sqrt{\frac{1}{N}\sum_{i=1}^Nx_i^2 - \left[\sum_{i=1}^Nx_i/N\right]^2}.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.2492725em;"></span><span class="strut bottom" style="height:3.6550199999999995em;vertical-align:-1.4057474999999997em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">σ</span><span class="mrel">=</span><span class="sqrt mord"><span class="sqrt-sign" style="top:-0.14427750000000028em;"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing mult"><span class="vlist"><span style="top:0.665005em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span>⎷</span></span></span><span style="top:-0.24999499999999997em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span></span></span></span><span style="top:-0.854995em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span></span></span></span><span style="top:-1.459995em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="delimsizinginner delim-size4"><span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="mord displaystyle textstyle cramped"><span class="mord reset-textstyle displaystyle textstyle cramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.27686399999999994em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span style="top:-0.34480000000000005em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">−</span><span class="minner"><span class="minner displaystyle textstyle cramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size4">[</span></span><span class="mop op-limits"><span class="vlist"><span style="top:1.1776689999999999em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">i</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathrm">/</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size4">]</span></span></span><span class="vlist"><span style="top:-1.442336em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span><span style="top:-2.1692725em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span><span class="mord mathrm">.</span></span></span></span></span></p>
+</div>
+<div class="teht">
+<h1>Tehtävä</h1>
+<p>Ohessa on taulukko neljästä eri tilanteesta, joissa kaikissa on kaksi muuttujaa <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> ja <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span>.
+Laske kullekin tilanteelle muuttujien <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> ja <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> keskiarvot ja -hajonnat.
+Miltä hajontakuviot mahtavat näyttää?</p>
+<p>Jos käytät esimerkiksi taulukkolaskentaohjelmaa, niin laske lisäksi
+muuttujien <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span> ja <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span> korrelaatiokertoimet kussakin otoksessa.</p>
+<table class="wikitable" style="text-align: center; margin-left:auto; margin-right:auto;">
+<tbody><tr>
+<th colspan="2">Data I</th>
+<th colspan="2">Data II</th>
+<th colspan="2">Data III</th>
+<th colspan="2">Data IV</th>
+</tr>
+<tr>
+<td>x</td>
+<td>y</td>
+<td>x</td>
+<td>y</td>
+<td>x</td>
+<td>y</td>
+<td>x</td>
+<td>y</td>
+</tr>
+<tr>
+<td>10.0</td>
+<td>8.04</td>
+<td>10.0</td>
+<td>9.14</td>
+<td>10.0</td>
+<td>7.46</td>
+<td>8.0</td>
+<td>6.58</td>
+</tr>
+<tr>
+<td>8.0</td>
+<td>6.95</td>
+<td>8.0</td>
+<td>8.14</td>
+<td>8.0</td>
+<td>6.77</td>
+<td>8.0</td>
+<td>5.76</td>
+</tr>
+<tr>
+<td>13.0</td>
+<td>7.58</td>
+<td>13.0</td>
+<td>8.74</td>
+<td>13.0</td>
+<td>12.74</td>
+<td>8.0</td>
+<td>7.71</td>
+</tr>
+<tr>
+<td>9.0</td>
+<td>8.81</td>
+<td>9.0</td>
+<td>8.77</td>
+<td>9.0</td>
+<td>7.11</td>
+<td>8.0</td>
+<td>8.84</td>
+</tr>
+<tr>
+<td>11.0</td>
+<td>8.33</td>
+<td>11.0</td>
+<td>9.26</td>
+<td>11.0</td>
+<td>7.81</td>
+<td>8.0</td>
+<td>8.47</td>
+</tr>
+<tr>
+<td>14.0</td>
+<td>9.96</td>
+<td>14.0</td>
+<td>8.10</td>
+<td>14.0</td>
+<td>8.84</td>
+<td>8.0</td>
+<td>7.04</td>
+</tr>
+<tr>
+<td>6.0</td>
+<td>7.24</td>
+<td>6.0</td>
+<td>6.13</td>
+<td>6.0</td>
+<td>6.08</td>
+<td>8.0</td>
+<td>5.25</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>4.26</td>
+<td>4.0</td>
+<td>3.10</td>
+<td>4.0</td>
+<td>5.39</td>
+<td>19.0</td>
+<td>12.50</td>
+</tr>
+<tr>
+<td>12.0</td>
+<td>10.84</td>
+<td>12.0</td>
+<td>9.13</td>
+<td>12.0</td>
+<td>8.15</td>
+<td>8.0</td>
+<td>5.56</td>
+</tr>
+<tr>
+<td>7.0</td>
+<td>4.82</td>
+<td>7.0</td>
+<td>7.26</td>
+<td>7.0</td>
+<td>6.42</td>
+<td>8.0</td>
+<td>7.91</td>
+</tr>
+<tr>
+<td>5.0</td>
+<td>5.68</td>
+<td>5.0</td>
+<td>4.74</td>
+<td>5.0</td>
+<td>5.73</td>
+<td>8.0</td>
+<td>6.89</td>
+</tr>
+</tbody></table>
+<p>Katso lopuksi <a href="assets/img/quartet.png">hajontakuviot</a>.</p>
+</div>
+</div></div></div></div></main><footer></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script><script type="text/javascript" src="assets/js/jquery-3.2.1.slim.min.js"></script><script type="text/javascript" src="assets/js/teht.js"></script><script type="text/javascript" src="assets/js/ratk.js"></script></body></html>

@@ -18,31 +18,56 @@ title: "Matematiikkaa kaikille: harjoitus 1"
 * Vertaa tulosta alkuperäiseen kolminumeroiseen lukuun. Mitä huomaat?
 * Osaatko perustella havaintosi pätevän yleisesti?
 :::
+::: ratk
+# Ratkaisuehdotus
+Jako menee tasan ja tulos on alkuperäinen luku. Tämä johtuu siitä, että
+kolminumeroisen luvun toistaminen vastaa sen kertomista
+luvulla $1001 = 13\cdot 11 \cdot 7$ ja toisin päin: esimerkiksi $314\cdot1001 = 314314$.
+:::
+
 
 ::: teht
 # Tehtävä
 Luonnollinen luku $n$ on *kolmioluku*, jos $n$ pistettä voidaan asetella kolmion muotoon. Esimerkiksi $1$, $3$ ja $6$ ovat kolmiolukuja:
 
-![Kolmiolukuja](assets/img/triangles.png)
+<div class="img-box">
+  <img src="assets/img/triangles.png">
+</div>
 
-* Selvitä 5 ensimmäistä kolmiolukua.
+* Selvitä viisi ensimmäistä kolmiolukua.
 * Miten kolmioluku saadaan edellisestä kolmioluvusta?
 * Millainen summalauseke kertoo $n$:nnen kolmioluvun?
 * Perustele kolmiolukujen avulla, että $1 + 2 + 3 + \ldots + n = n(n+1)/2$.
 :::
+::: ratk
+# Ratkaisuehdotus
 
+* Viisi ensimmäistä kolmiolukua ovat $1, 3, 6, 10, 15$
+* Järjestyksessä $n$:s kolmioluku saadaan edellisestä lisäämällä $n$ (pistettä).
+* Järjestyksessä $n$:s kolmioluku - pisteiden lukumäärä kuviossa - saadaan summana $1 + 2 + 3 + \ldots + n$.
+* Piirretään $n\times(n+1)$-kokoinen suorakulmio ja jaetaan se kahtia lävistäjän avulla.
+  Syntyy kaksi samankokoista kolmiota, jotka vastaavat $n$:siä
+  kolmiolukuja. Kummankin "pinta-ala" on $1 + 2 + 3 + \ldots + n$. Väite seuraa.
+:::
 ::: teht
 # Tehtävä
 Luonnollinen luku on *neliöluku*, jos $n$ pistettä voidaan asetella neliön muotoon. Esimerkiksi $1$, $4$ ja $9$ ovat neliölukuja:
 
-![Neliölukuja](assets/img/squares.png)
-
-* Selvitä 5 ensimmäistä neliölukua.
+<div class="img-box">
+  <img src="assets/img/squares.png">
+</div>
+* Selvitä viisi ensimmäistä neliölukua.
 * Miten neliöluku saadaan edellisestä neliöluvusta?
 * Perustele neliölukujen avulla, että $1 + 3 + 5 +\ldots + (2n - 1) = n^2$.
 * Miten neliöluku voidaan muodostaa kolmiolukujen avulla?
 :::
-
+::: ratk
+# Ratkaisuehdotus
+* Viisi ensimmäistä neliölukua ovat $1, 4, 9, 16, 25$.
+* Seuraava neliöluku saadaan lisäämällä toiselle sivulle $n+1$ pistettä ja toiselle $n$, eli yhteensä $2n+1$ pistettä.
+* Edellisen perusteella $n$:s neliöluku on $1 + 3 + 5 +\ldots + (2n - 1)$. Toisaalta $n$:s neliöluku on $n^2$. Luvut ovat siis yhtäsuuret.  
+* Neliöluku on kahden peräkkäisen kolmioluvun summa.
+:::
 ::: teht
 # Tehtävä
 Luonnollinen luku on *kuutioluku*, jos $n$ pistettä voidaan asetella kuution muotoon. Esimerkiksi $1$, $8$ ja $27$ ovat kuutiolukuja.
@@ -53,6 +78,29 @@ Luonnollinen luku on *kuutioluku*, jos $n$ pistettä voidaan asetella kuution mu
 * Mitä voit havaintosi perusteella sanoa luvusta $1^3 + 2^3 + 3^3 + 4^3 + 5^3$?
 * Bonus: Selvitä, päteekö havaintosi yleisesti!
 :::
+::: ratk
+# Ratkaisuehdotus
+
+* $1^2=1$, $3^2=9$, $6^2=36$, $10^2=100$, $15^2=225$
+* Erotukset ovat $8, 27, 64, 125$. Ne ovat peräkkäisiä kuutiolukuja.
+*
+* Havainnon perusteella kuutioluvut voidaan kirjoittaa neliöiden erotuksena:
+  $$
+    1^3 + 2^3 + 3^3 + 4^3 + 5^3 = 1^2 + (3^2 - 1^2) + (6^2 - 3^2) + (10^2 - 6^2) + (15^2 - 10^2).
+  $$
+  Oikean puolen lausekkeessa summattavat kumoutuvat säännöllisesti ja jäljelle jää ainoastaan $15^2$.
+  Kun vielä muistetaan, että $15$ on $5$. kolmioluku, saadaan yhtälö
+  $$
+    1^3 + 2^3 + 3^3 + 4^3 + 5^3 = (1 + 2 + 3 + 4 + 5)^2.
+  $$
+* Havainto pätee yleisesti, eli kaikilla $n\in\mathbb{N}_+$ pätee
+  $$
+    1^3 + 2^3 + 3^3 + \ldots + n^3 = (1 + 2 + 3 + \ldots + n)^2.
+  $$
+  Katso [kuva](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Nicomachus_theorem_3D.svg/512px-Nicomachus_theorem_3D.svg.png)
+  ja [lue lisää](https://en.wikipedia.org/wiki/Cube_(algebra)#Sum_of_first_n_cubes).
+:::
+
 
 ::: teht
 # Tehtävä
@@ -65,6 +113,15 @@ Lukujonoa sanotaan joskus *fibonaccimaiseksi*, jos se muodostetaan kuten Fibonac
 * Vertaa tulosta toisten ryhmäläisten tuloksiin. Mitä huomaat?
 * Osaatko perustella havaintosi pätevän yleisesti? Voisiko tulosta yleistää?
 :::
+::: ratk
+# Ratkaisuehdotus
+* $a_1=2$, $a_2=5$
+* $2, 5, 7, 12, 19, 31, 50, 81, 131, 212$
+* Summa on $550$, 7. jäsen $50$, osamäärä $11$
+* Tulos on sama kaikilla muillakin jonoilla
+*
+:::
+
 
 ::: teht
 # Tehtävä
@@ -83,6 +140,14 @@ Tee toinen tai molemmat seuraavista tehtävistä:
 * Valitse kolme lukua väliltä 1 - 20 ja muodosta Collatzin jonot. Kuinka monta askelta tarvitset päästäksesi lukuun 1?
 * Kirjoita ohjelma, joka tulostaa Collatzin jonon annetulle luvulle väliltä 1 - 100. Voit käyttää valitsemaasi ohjelmointikieltä, myös pseudokoodia. Tutki ohjelmasi toimintaa muutamilla luvuilla.
 :::
+::: ratk
+# Ratkaisuehdotus
+Jos valitaan esim. luvut $5, 7, 12$, niin saadaan seuraavat jonot:
+$$ 5, 16, 8, 4, 2, 1 $$
+$$ 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1$$
+$$ 12, 6, 3, 10, 5, 16, 8, 4, 2, 1 $$
+:::
+
 
 ::: note
 Jokainen luonnollinen luku voidaan jakaa yksikäsitteisellä tavalla alkulukujen tuloksi eli *alkutekijöihin*.
@@ -107,6 +172,20 @@ $$
 
 Voit laskea päässäsi tai käyttää apuvälineitä (välivaiheita ei tarvitse kirjoittaa näkyviin).
 :::
+::: ratk
+# Ratkaisuehdotus
+| Luku | Alkutekijät | Tekijät             |
+|------|-------------|---------------------|
+| 4    | 2,2         | 1,2,4               |
+| 6    | 2,3         | 1,2,3,6             |
+| 12   | 2,2,3       | 1,2,3,4,6,12        |
+| 18   | 2,3,3       | 1,2,3,6,9,18        |
+| 28   | 2,2,7       | 1,2,4,7,14,28       |
+| 30   | 2,3,5       | 1,2,3,5,6,10,15,30  |
+| 40   | 2,2,2,5     | 1,2,4,8,10,20,40    |
+| 70   | 2,5,7       | 1,2,5,7,10,14,35,70 |
+:::
+
 
 ::: teht
 # Tehtävä
@@ -116,14 +195,29 @@ Esimerkiksi sanotaan, että luku on
 1. *täydellinen*, jos se on kaikkien tekijöidensä summa.
 2. *puolitäydellinen*, jos se on joidenkin tekijöidensä summa.
 3. *outo*, jos se on pienempi kuin kaikkien tekijöidensä summa, muttei puolitäydellinen.
+4. *vajaa*, jos se on suurempi kuin tekijöidensä summa.
 
-Tässä lukua ei lasketa itsensä tekijäksi, mutta $1$ lasketaan.
+Tässä lukua ei lasketa itsensä tekijäksi, mutta $1$ lasketaan. Nämä luokat eivät kata kaikkia luonnollisia lukuja.
 
 Tutki edellisen tehtävän avulla, ovatko seuraavat luvut täydellisiä, puolitäydellisiä tai outoja:
 $$
 4, 6, 12, 18, 28, 30, 40, 70
 $$
 :::
+::: ratk
+# Ratkaisuehdotus
+| Luku | Alkutekijät | Tekijät          | Tekijöiden summa | Tyyppi           |
+|------|-------------|------------------|------------------|------------------|
+| 4    | 2,2         | 1,2              | 3                | Vajaa            |
+| 6    | 2,3         | 1,2,3            | 6                | Täydellinen      |
+| 12   | 2,2,3       | 1,2,3,4,6        | 16               | Puolitäydellinen |
+| 18   | 2,3,3       | 1,2,3,6,9        | 21               | Puolitäydellinen |
+| 28   | 2,2,7       | 1,2,4,7,14       | 28               | Täydellinen      |
+| 30   | 2,3,5       | 1,2,3,5,6,10,15  | 42               | Puolitäydellinen |
+| 40   | 2,2,2,5     | 1,2,4,8,10,20    | 45               | Puolitäydellinen |
+| 70   | 2,5,7       | 1,2,5,7,10,14,35 | 74               | Outo             |
+:::
+
 
 ::: teht
 # Tehtävä
@@ -135,6 +229,13 @@ Luvut $m$ ja $n$ ovat suhteellisia alkulukuja, jos niiden suurin yhteinen tekij�
 * Mitä voit sanoa luvusta $\varphi(n)$, kun $n$ on alkuluku?
 * Jos $m$ ja $n$ ovat suhteellisia alkulukuja, niin $\varphi(mn) = \varphi(m)\varphi(n)$. Määritä tämän tiedon avulla luvut $\varphi(77)$ ja $\varphi(99)$.
 * Jos $p$ on alkuluku, niin $\varphi(p^k) = p^k\left(1-\frac{1}{p}\right)$. Määritä tämän tiedon avulla luvut $\varphi(128)$ ja $\varphi(625)$.
+:::
+::: ratk
+# Ratkaisuehdotus
+* $\varphi(12) = 4$, $\varphi(30) = 8$ ja $\varphi(70) = 24$
+* Alkuluvun tapauksessa $\varphi(n) = n-1$
+* $\varphi(77) = \varphi(7\cdot 11) = 6\cdot 10 = 60$ ja $\varphi(99) = \varphi(9\cdot11) = 2\cdot 2\cdot 10 = 40$
+* $\varphi(128) = \varphi(2^7) = 2^7(1-1/2) = 64$ ja $\varphi(625) = \varphi(5^4) = 5^4(1-1/5) = 500$.
 :::
 
 ::: teht
@@ -159,6 +260,29 @@ Tarkista Gaussin väite lukujen $18$, $28$ ja $70$ osalta. Voit käyttää apuna
 | 80  | 32  | 54  | 40  | 82  | 24  | 64  | 42  | 56  | 40  | 88  |
 | 90  | 24  | 72  | 44  | 60  | 46  | 72  | 32  | 96  | 42  | 60  |
 :::
+::: ratk
+# Ratkaisuehdotus
+Käytetään aiemman tehtävän ratkaisua ja tehtävässä annettua taulukkoa:
+$$
+  \sum_{d\mid 18}\varphi(d) = \varphi(1) + \varphi(2) + \varphi(3) + \varphi(6) + \varphi(9) + \varphi(18) = 1 + 1 + 2 + 2 + 6 + 6 = 18.
+$$
+
+$$
+  \begin{aligned}
+  \sum_{d\mid 28}\varphi(d) &= \varphi(1) + \varphi(2) + \varphi(4) + \varphi(7) + \varphi(14) + \varphi(28) \\
+  &= 1 + 1 + 2 + 6 + 6 + 12 = 28
+  \end{aligned}
+$$
+
+$$
+  \begin{aligned}
+  \sum_{d\mid 70}\varphi(d)
+  &= \varphi(1) + \varphi(2) + \varphi(5) + \varphi(7) + \varphi(10) + \varphi(14) + \varphi(35) + \varphi(70) \\
+  &= 1 + 1 + 4 + 6 + 4 + 6 + 24 + 24 = 70
+  \end{aligned}
+$$
+:::
+
 
 ::: teht
 # Tehtävä
@@ -168,6 +292,13 @@ Tulkitse ja tarkista lauseen väite
 * luvuilla $a=2$ ja $p=7$
 * joillakin muilla luvuilla $a$ ja $p$.
 :::
+::: ratk
+# Ratkaisuehdotus
+* Jos  $a=2$ ja $p=7$, niin lauseen mukaan $2^{7-1}-1$ olisi jaollinen luvulla $p$.
+  Tämä pätee, sillä $2^{7-1}-1 = 2^6 - 1 = 63 = 7\cdot 9$.
+* Valitaan esim. $a = 4$ ja $p=5$, jolloin $4^{5-1}-1 = 4^4 - 1 = 255 = 5\cdot 51$.
+:::
+
 
 ::: teht
 # Tehtävä
@@ -178,4 +309,11 @@ Tulkitse ja tarkista lauseen väite
 * joillakin muilla luvuilla $a$ ja $n$.
 
 Miksi Fermat'n pieni lause seuraa Eulerin tuloksesta?
+:::
+::: ratk
+# Ratkaisuehdotus
+* $9^{\varphi(4)}-1 = 9^2 - 1 = 80 = 4\cdot 20$, joten $9^{\varphi(4)}-1$ on jaollinen luvulla $4$.
+* Valitaan esim. $a = 6$ ja $n=12$, jolloin $6^{\varphi(12)}-1 = 6^4 - 1 = 1296 - 1 = 12\cdot 108$.
+
+Fermat'n pieni lause seuraa, koska $\varphi(n) = n-1$ silloin, kun $n$ on alkuluku.
 :::
